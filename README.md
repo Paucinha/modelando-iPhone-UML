@@ -27,7 +27,7 @@ Lógica de programação e POO;
 3. **Navegador na Internet**
    - Métodos: `exibirPagina(String url)`, `adicionarNovaAba()`, `atualizarPagina()`
 
-```
+``` Markdown
 ## Diagrama UML
 
 ### Interfaces
