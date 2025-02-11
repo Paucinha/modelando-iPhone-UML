@@ -27,43 +27,50 @@ Lógica de programação e POO;
 3. **Navegador na Internet**
    - Métodos: `exibirPagina(String url)`, `adicionarNovaAba()`, `atualizarPagina()`
 
-   ```pgsql
+```
+## Diagrama UML
 
-  +---------------------------------+           +---------------------------------+
-  |        ReprodutorMusical        |           |      AparelhoTelefonico         |
-  +---------------------------------+           +---------------------------------+
-  | +tocar(): void                  |           | +ligar(numero: String): void    |
-  | +pausar(): void                 |           | +atender(): void                |
-  | +selecionarMusica(musica: String): void |   | +iniciarCorreioVoz(): void     |
-  +---------------------------------+           +---------------------------------+
-            ^                                      ^
-            |                                      |
-            +--------------------------------------+
-                              |
-                       +-------------------------+
-                       |     NavegadorInternet   |
-                       +-------------------------+
-                       | +exibirPagina(url: String): void |
-                       | +adicionarNovaAba(): void        |
-                       | +atualizarPagina(): void         |
-                       +-------------------------+
-                               ^
-                               |
-                      +-----------------+
-                      |      iPhone     |
-                      +-----------------+
-                      |                 |
-                      +-----------------+
-                      | +tocar(): void  |
-                      | +pausar(): void |
-                      | +selecionarMusica(musica: String): void |
-                      | +ligar(numero: String): void |
-                      | +atender(): void |
-                      | +iniciarCorreioVoz(): void |
-                      | +exibirPagina(url: String): void |
-                      | +adicionarNovaAba(): void |
-                      | +atualizarPagina(): void |
-                      +-----------------+
+### Interfaces
+
+#### ReprodutorMusical
+| Método                              |
+|-------------------------------------|
+| + tocar(): void                     |
+| + pausar(): void                    |
+| + selecionarMusica(musica: String): void |
+
+#### AparelhoTelefonico
+| Método                              |
+|-------------------------------------|
+| + ligar(numero: String): void       |
+| + atender(): void                   |
+| + iniciarCorreioVoz(): void         |
+
+#### NavegadorInternet
+| Método                              |
+|-------------------------------------|
+| + exibirPagina(url: String): void   |
+| + adicionarNovaAba(): void          |
+| + atualizarPagina(): void           |
+
+### Classe
+
+#### iPhone
+| Método                                                                  |
+|-------------------------------------------------------------------------|
+| + tocar(): void                                                         |
+| + pausar(): void                                                        |
+| + selecionarMusica(musica: String): void                                 |
+| + ligar(numero: String): void                                            |
+| + atender(): void                                                        |
+| + iniciarCorreioVoz(): void                                              |
+| + exibirPagina(url: String): void                                        |
+| + adicionarNovaAba(): void                                               |
+| + atualizarPagina(): void                                                |
+
+### Relacionamentos
+
+- **iPhone** implementa as interfaces **ReprodutorMusical**, **AparelhoTelefonico** e **NavegadorInternet**.
 ```
 
 ##
