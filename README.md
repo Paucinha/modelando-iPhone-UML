@@ -2,7 +2,9 @@
 
 ![GitHub](https://img.shields.io/github/license/Paucinha/api-ecommerce-dio?style=flat-square)
 
-Chegou a hora de colocar em prática a análise de negócios, requisitos, conceitos de programação orientada a objetos e modelagem UML. Com base no vídeo de lançamento do iPhone, utilize uma ferramenta de UML de sua preferência para elaborar a diagramação das classes e interfaces, representando as funções do iPhone como Reprodutor Musical, Aparelho Telefônico e Navegador na Internet. Após isso, crie as classes e interfaces no formato de arquivos  `.java`. 
+Chegou a hora de colocar em prática a análise de negócios, requisitos, conceitos de programação orientada a objetos e modelagem UML. Com base no vídeo de lançamento do iPhone, utilize uma ferramenta de UML de sua preferência para elaborar a diagramação das classes e interfaces, representando as funções do iPhone como Reprodutor Musical, Aparelho Telefônico e Navegador na Internet. Após isso, crie as classes e interfaces no formato de arquivos  `.java`.
+
+**POO | Git | Java | Git | Back-End | Intermediário**
 
 #### Pré-requisitos:
 
@@ -24,6 +26,8 @@ Lógica de programação e POO;
    - Métodos: `ligar(String numero)`, `atender()`, `iniciarCorreioVoz()`
 3. **Navegador na Internet**
    - Métodos: `exibirPagina(String url)`, `adicionarNovaAba()`, `atualizarPagina()`
+
+   ```pgsql
 
   +---------------------------------+           +---------------------------------+
   |        ReprodutorMusical        |           |      AparelhoTelefonico         |
@@ -60,6 +64,7 @@ Lógica de programação e POO;
                       | +adicionarNovaAba(): void |
                       | +atualizarPagina(): void |
                       +-----------------+
+```
 
 ##
 
